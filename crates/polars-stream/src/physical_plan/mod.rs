@@ -11,6 +11,7 @@ use polars_plan::plans::{AExpr, DataFrameUdf, FileInfo, FileScan, ScanSources, I
 use polars_plan::prelude::expr_ir::ExprIR;
 
 mod fmt;
+mod ir;
 mod lower_expr;
 mod lower_ir;
 mod to_graph;

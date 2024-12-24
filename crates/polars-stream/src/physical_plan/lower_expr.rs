@@ -96,6 +96,7 @@ pub(crate) fn is_elementwise_rec_cached(
     *cache.is_elementwise.get(&expr_key).unwrap()
 }
 
+/// Expressions that don't depent on an input 'DataFrame', such as `lit(0)` or `lit(10).filter(..)`
 #[recursive::recursive]
 fn is_input_independent_rec(
     expr_key: IRNodeKey,
